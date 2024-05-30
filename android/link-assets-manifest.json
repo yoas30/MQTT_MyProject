@@ -1,0 +1,73 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/font/Changa-Bold.ttf",
+      "sha1": "3c3ffb47224f01bc80f77b18474527783efa3677"
+    },
+    {
+      "path": "src/font/Changa-ExtraBold.ttf",
+      "sha1": "653ed176d215a43c43d18115bd24d18cd7f8bed5"
+    },
+    {
+      "path": "src/font/Changa-ExtraLight.ttf",
+      "sha1": "38d28789d38fe0f7df2af9e546335de850dbae67"
+    },
+    {
+      "path": "src/font/Changa-Light.ttf",
+      "sha1": "52952084a782ad5bd046cf4e18e1dd8933496e6c"
+    },
+    {
+      "path": "src/font/Changa-Medium.ttf",
+      "sha1": "a948deee6d042202ac8876b0a1ea78f6b58798bf"
+    },
+    {
+      "path": "src/font/Changa-Regular.ttf",
+      "sha1": "0423037e8ccdf412a116e5ab18bb4eff595234f9"
+    },
+    {
+      "path": "src/font/Changa-SemiBold.ttf",
+      "sha1": "d8738ec902f17b3265c56468861208e4108e0183"
+    },
+    {
+      "path": "src/font/Changa-VariableFont_wght.ttf",
+      "sha1": "30ff952b99e1fc9c60967109951ce7801c8d202d"
+    },
+    {
+      "path": "src/font/Jersey25-Regular.ttf",
+      "sha1": "bc5ebb48ff8c00f6b23be8df042931c6d8c04337"
+    },
+    {
+      "path": "src/font/Oswald-Bold.ttf",
+      "sha1": "6e78c90d65a6133d979daebc1255d2f560a97c79"
+    },
+    {
+      "path": "src/font/Oswald-ExtraLight.ttf",
+      "sha1": "ac9323c6f3e5965bbeee4c57db7b78d8d67c9d1b"
+    },
+    {
+      "path": "src/font/Oswald-Light.ttf",
+      "sha1": "18b6fe10677763e882985371a015bdc45ec2943c"
+    },
+    {
+      "path": "src/font/Oswald-Medium.ttf",
+      "sha1": "70e75da33d777c839cf59cb042adf7fc5fa0235a"
+    },
+    {
+      "path": "src/font/Oswald-Regular.ttf",
+      "sha1": "06aae8f5a28908ba8eca0d5bdc01cedc2a184a5f"
+    },
+    {
+      "path": "src/font/Oswald-SemiBold.ttf",
+      "sha1": "10d1c319ab0685f35f3c9eb87a9524de0560345e"
+    },
+    {
+      "path": "src/font/Oswald-VariableFont_wght.ttf",
+      "sha1": "83708d011b4d9bab0f4e275cf22b588558037a79"
+    },
+    {
+      "path": "src/font/PoetsenOne-Regular.ttf",
+      "sha1": "90edb2edd900ad302faeab3b1f0f0b5548649dda"
+    }
+  ]
+}

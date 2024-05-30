@@ -2,11 +2,9 @@ import { StyleSheet, Text, TouchableOpacity, View, Image, Platform, Alert } from
 import { useState, useEffect, React } from "react";
 import Paho from "paho-mqtt";
 
+
+
 const logoImg = require ('../.././img/della.png');
-
-
-
-const bodyText = 'LOADING...';
 
 client = new Paho.Client(
   "broker.mqtt-dashboard.com",
@@ -16,9 +14,9 @@ client = new Paho.Client(
 
 const DashboardDepan = () => {
 
-  const [value, setValue] = useState(0); //ok
-  const [text, setText] = useState('');
-  const fontFamily1 = Platform.OS === 'ios' ? 'Helvetica Neue' : 'Roboto';
+  //const [value, setValue] = useState(0); //ok
+  const [textKonek, setTextKonek] = useState('LOADING...');
+  //const fontFamily1 = Platform.OS === 'ios' ? 'Oswald-Bold' : 'Oswald-SemiBold';
   
 
 
@@ -27,17 +25,17 @@ const DashboardDepan = () => {
         setValue(parseInt(message.payloadString));
   }
 
-  ////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////
   useEffect(() => {
     client.connect( {
       onSuccess: () => { 
-      setText('TERKONEKSI !!');
+      setTextKonek('TERKONEKSI !!');
       console.log("Connected!!");
       client.subscribe("yoas1995/data");
       client.onMessageArrived = onMessage;
     },
     onFailure: () => {
-      setText('TIDAK TERKONEKSI !!');
+      setTextKonek('TIDAK TERKONEKSI !!');
       console.log("Failed to Connect!"); 
     }
   });
@@ -70,17 +68,17 @@ function pompaMati(c) {
       <Image source={logoImg} style={{ width: 200, height: 200 }}/>
       <Text style={{ 
           fontSize : 30,
-          color : "#FFFFFF",
-          fontWeight : 700,
+          color : "#FFF",
           marginTop : 40,
-          fontFamily1
+          fontFamily : 'Oswald-Bold'
        }}
       > KELUARGA CANTIK DAN GANTENG </Text>
       <Text style={{ 
           fontSize : 20,
-          color : "#FFFFFF",
+          color : "#FFF",
           fontWeight : 500,
-          marginTop : 10
+          marginTop : 10,
+          fontFamily : 'PoetsenOne-Regular'
        }}
       >== Hidupkan Pompa Air ==</Text>
 
@@ -97,10 +95,9 @@ function pompaMati(c) {
                   }}>
                     <Text style={{ 
                           color: "white",
-                          fontSize: 20,
-                          fontWeight: "500",
+                          fontSize: 25,
                           textAlign: "center",
-                          textAlignVertical: "center",
+                          fontFamily : 'Jersey25-Regular'
                     }}>Klik ON</Text>
                 </TouchableOpacity>
 
@@ -115,22 +112,21 @@ function pompaMati(c) {
                   }}>
                     <Text style={{ 
                           color: "white",
-                          fontSize: 20,
-                          fontWeight: "500",
-                          textAlign: "center"
+                          fontSize: 25,
+                          textAlign: "center",
+                          fontFamily : 'Jersey25-Regular'
                     }}>Klik OFF</Text>
                 </TouchableOpacity>         
       </View>
 
           <Text style={{ 
-              fontSize : 15,
-              color : "#FFFFFF",
-              fontWeight : 500,
-              marginTop : 30
+              fontSize : 20,
+              color : "#FFF",
+              marginTop : 10,
+              fontFamily : 'Changa-Regular'
           }}>
-            {text}
+            {textKonek}
           </Text>
-
     </View>
   )
 }
@@ -140,8 +136,9 @@ export default DashboardDepan;
 const styles = StyleSheet.create({
   container1: {
     flex:1,
-     backgroundColor:"#2c3e50",
+    backgroundColor:"#2c3e50",
     justifyContent: "center",
     alignItems:"center",
   }
-})
+});
+
