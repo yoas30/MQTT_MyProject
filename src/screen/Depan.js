@@ -67,7 +67,7 @@ function pompaMati(c) {
       {/* <Ionicons name={"logo-android"} size = {120} color = {"#FFFFFF"}/> */}
       <Image source={logoImg} style={{ width: 200, height: 200 }}/>
       <Text style={{ 
-          fontSize : 30,
+          fontSize : 28,
           color : "#FFF",
           marginTop : 40,
           fontFamily : 'Oswald-Bold'
